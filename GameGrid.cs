@@ -71,5 +71,55 @@ namespace Tetris
 
             return true;
         }
+
+        /*
+        Method to remove full rows and move the rows above down
+        Using the variable "cleared", it will check each row if it's full, if it is then it will clear it from the board and increment the value once. if it isn't then it will move on to the next. 
+        However before it moves on, if the row below a not cleared row was cleared, it will move that row down before it continues
+        The remaining rows which haven't been cleared are moved down based on the amount of the cleared rows
+        */
+
+        //Method that clears a row
+        private void ClearRow(int r)
+        {
+            for (int c = 0; c < Columns; c++)
+            {
+                grid[r, c] = 0;
+            }
+        }
+
+        //Method that moved a row down by  certain number of rows
+        private void MoveRowDown(int r, int numRows)
+        {
+            for (int c = 0; c < Columns; c++)
+            {
+                grid[r + numRows, c] = grid[r, c];
+                grid[r, c] = 0;
+            }
+        }
+
+        //Method that clears full rows --> clear variable starts at 0, and we move from the bottom row towards the top
+        public int ClearFullRows()
+        {
+            int cleared = 0;
+            //check if the current row is full, if it is, clear it and increment cleared variable
+            for (int r = Rows - 1; r >= 0; r--)
+            {
+                if (IsRowFull(r))
+                {
+                    ClearRow(r);
+                    cleared++;
+                }
+                //if cleared is greater than 0, we move the current row down by the numbr of cleared rows
+                else if (cleared > 0)
+                {
+                    MoveRowDown(r, cleared);
+                }
+                //then finally we return the number of cleared rows
+            }
+            return cleared;
+        }
+
+
     }
 }
