@@ -2,7 +2,8 @@ namespace Tetris
 {
     public class Position
     {
-        //store the row and column
+        //This class will determine the position of the block being moved on the grid
+        //store a row and a column
         public int Row { get; set; }
         public int Column { get; set; }
         //simple constructor
