@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IYiTPk5T0aY=",
+  "dgSpecHash": "8QkCZR7VtRM=",
   "success": true,
-  "projectFilePath": "/Users/Sigrid/Documents/C#/Tetris/Tetris.csproj",
+  "projectFilePath": "/Users/Sigrid/Documents/C#/Tetris/Tetris/Tetris.csproj",
   "expectedPackageFiles": [
     "/Users/Sigrid/.nuget/packages/avalonia/11.2.1/avalonia.11.2.1.nupkg.sha512",
     "/Users/Sigrid/.nuget/packages/avalonia.angle.windows.natives/2.1.22045.20230930/avalonia.angle.windows.natives.2.1.22045.20230930.nupkg.sha512",

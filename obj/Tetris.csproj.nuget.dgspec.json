@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Sigrid/Documents/C#/Tetris/Tetris.csproj": {}
+    "/Users/Sigrid/Documents/C#/Tetris/Tetris/Tetris.csproj": {}
   },
   "projects": {
-    "/Users/Sigrid/Documents/C#/Tetris/Tetris.csproj": {
+    "/Users/Sigrid/Documents/C#/Tetris/Tetris/Tetris.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sigrid/Documents/C#/Tetris/Tetris.csproj",
+        "projectUniqueName": "/Users/Sigrid/Documents/C#/Tetris/Tetris/Tetris.csproj",
         "projectName": "Tetris",
-        "projectPath": "/Users/Sigrid/Documents/C#/Tetris/Tetris.csproj",
+        "projectPath": "/Users/Sigrid/Documents/C#/Tetris/Tetris/Tetris.csproj",
         "packagesPath": "/Users/Sigrid/.nuget/packages/",
-        "outputPath": "/Users/Sigrid/Documents/C#/Tetris/obj/",
+        "outputPath": "/Users/Sigrid/Documents/C#/Tetris/Tetris/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Sigrid/.nuget/NuGet/NuGet.Config"

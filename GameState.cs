@@ -44,7 +44,7 @@ namespace Tetris
             return true;
         }
 
-        //add a methos that rotates the current block clockwise, but only if it's possible to do from where it is
+        //add a method that rotates the current block clockwise, but only if it's possible to do from where it is
         //the way we do it is simply to rotate the block and if it ends up in an illegal position then we rotate it back
         public void RotateBlockCW()
         {
@@ -53,6 +53,38 @@ namespace Tetris
             if (!BlockFits())
             {
                 CurrentBlock.RotateCCW();
+            }
+        }
+
+        //add a method that rotates the current block counter clockwise and works in the same way as the one above
+        public void RotateBlockCCW()
+        {
+            CurrentBlock.RotateBlockCCW();
+
+            if (!BlockFits())
+            {
+                CurrentBlock.RotateCW();
+            }
+        }
+
+        //add methods for moving the current block left and right - our strategy will be the same as above; if we try to move it and it ends up in an illegal/impossible position, then we move it back
+        public void MoveBlockLeft()
+        {
+            CurrentBlock.Move(0, -1);
+
+            if (!BlockFits())
+            {
+                CurrentBlock.Move(0, 1);
+            }
+        }
+
+        public void MoveBlockRight()
+        {
+            CurrentBlock.Move(0, 1);
+
+            if (!BlockFits())
+            {
+                CurrentBlock.Move(0, -1);
             }
         }
     }
