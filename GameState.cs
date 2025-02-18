@@ -120,5 +120,16 @@ namespace Tetris
         }
 
         //add a move down method
+        //it works just like the other move methods except that it also calls the placeblock method in case the block cannot be moved down
+        public void MoveBlockDown()
+        {
+            CurrentBlock.Move(1, 0);
+
+            if (!BlockFits())
+            {
+                CurrentBlock.Move(-1, 0);
+                PlaceBlock();
+            }
+        }
     }
 }
