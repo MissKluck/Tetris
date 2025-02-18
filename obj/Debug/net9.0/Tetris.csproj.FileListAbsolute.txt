@@ -1,0 +1,8 @@
+/Users/Sigrid/Documents/C#/Tetris/Tetris/obj/Debug/net9.0/Tetris.csproj.AssemblyReference.cache
+/Users/Sigrid/Documents/C#/Tetris/Tetris/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache
+/Users/Sigrid/Documents/C#/Tetris/Tetris/obj/Debug/net9.0/Avalonia/resources
+/Users/Sigrid/Documents/C#/Tetris/Tetris/obj/Debug/net9.0/Tetris.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Sigrid/Documents/C#/Tetris/Tetris/obj/Debug/net9.0/Tetris.AssemblyInfoInputs.cache
+/Users/Sigrid/Documents/C#/Tetris/Tetris/obj/Debug/net9.0/Tetris.AssemblyInfo.cs
+/Users/Sigrid/Documents/C#/Tetris/Tetris/obj/Debug/net9.0/Tetris.csproj.CoreCompileInputs.cache
+/Users/Sigrid/Documents/C#/Tetris/Tetris/obj/Debug/net9.0/Tetris.sourcelink.json
