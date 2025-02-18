@@ -87,5 +87,38 @@ namespace Tetris
                 CurrentBlock.Move(0, -1);
             }
         }
+
+        //add a method to check if the game is over
+        //the way it does that is by checking the hidden rows at the top, and if either of those is not empty, meaning if it is filled, then the game is lost
+        private bool IsGameOver()
+        {
+            return !(GameGrid.IsRowEmpty(0) && GameGrid.IsRowEmpty(1));
+        }
+
+        //a method that will be called when the current block cannot be moved down
+        //first it looks over the tile positions of the current block and sets those positions in the gamegrid equal to the blocks ID
+        //then we clear any potentially full rows and check if the game is over
+        //if the game is over, we set the gameover property to true
+        //if the game isn't over, we update the current block
+        private void PlaceBlock()
+        {
+            foreach (Position p in CurrentBlock.TilePositions())
+            {
+                GameGrid[p.Row, p.Column] = CurrentBlock.Id;
+            }
+
+            GameGrid.ClearFullRows();
+
+            if (IsGameOver())
+            {
+                GameOver = true;
+            }
+            else
+            {
+                CurrentBlock = BlockQueue.GetAndUpdate();
+            }
+        }
+
+        //add a move down method
     }
 }
